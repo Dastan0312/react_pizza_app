@@ -1,23 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Home from "./page/Home/Home";
+import pizza1 from "./img/pizza1.png";
+import CartPage from "./page/cartPage/CartPage";
 
 function App() {
+  const pizzas = [
+    {
+      title: "Чизбургер-пицца",
+      price: "499",
+      img: pizza1,
+      category: "Мясные",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Сырная",
+      price: "490",
+      img: pizza1,
+      category: "Вегетарианская",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Креветки по-азиатски",
+      price: "599",
+      img: pizza1,
+      category: "Мясные",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Сырный цыпленок",
+      price: "699",
+      img: pizza1,
+      category: ["Мясные", "Острые"],
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Чизбургер-пицца",
+      price: "409",
+      img: pizza1,
+      category: "Острые",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Сырный цыпленок",
+      price: "400",
+      img: pizza1,
+      category: ["Острые", "Закрытые"],
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Чизбургер-пицца",
+      price: "399",
+      img: pizza1,
+      category: "Острые",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+    {
+      title: "Креветки по-азиатски",
+      price: "459",
+      img: pizza1,
+      category: "Закрытые",
+      kind: ["тонкое", "традиционное"],
+      sizes: [26, 32, 40],
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header tagline={"самая вкусная пицца во вселенной"} />
+
+      <Routes>
+        <Route path="/" element={<Home pizzas={pizzas} />} />
+        <Route path="/cart" element={<CartPage pizzas={pizzas} />} />
+      </Routes>
     </div>
   );
 }

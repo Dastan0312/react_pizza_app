@@ -1,0 +1,85 @@
+.cartSection {
+  min-height: 72vh;
+  display: flex;
+  justify-content: center;
+  /* min-width: 85vw; */
+}
+.cartHeader,
+.cartHeader > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartHeader div > h2 {
+  margin: 0 10px;
+}
+.cartItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px #e7e4e4 solid;
+  border-radius: 15px;
+}
+.cartItems img {
+  height: 90px;
+}
+.counter {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  cursor: pointer;
+  color: #eb5a1e;
+}
+.counter span {
+  margin: 0 10px;
+}
+.price {
+  font-size: 16px;
+}
+.times {
+  cursor: pointer;
+}
+.cartFooter {
+  display: flex;
+  flex-direction: column;
+}
+.cartFooter div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.cartBtn {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: #eb5a1e;
+  color: #fff;
+  cursor: pointer;
+}
+.cartBtnBack {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  max-width: max-content;
+}
+.cartBtnBack:hover {
+  opacity: 1;
+}
+.emtyCart {
+  text-align: center;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emtyCart h2,
+.emtyCart p {
+  margin: 10px 0;
+}

@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #7b7b7b solid;
+  padding-bottom: 15px;
+  margin: 15px 0 45px 0;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  margin: 5px;
+}
+.logo p {
+  color: #7b7b7b;
+}
+.cartBtn {
+  padding: 10px;
+  color: #fff;
+  background-color: #fe5f1e;
+  border-radius: 20px;
+}
+.cartBtn span {
+  margin: 5px;
+  cursor: pointer;
+}

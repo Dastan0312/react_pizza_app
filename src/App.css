@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+  margin: 2% 3%;
+  padding: 1.5% 3%;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 1340px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 35px 0;
+}
+.navBar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.activeBtn {
+  background-color: #282828;
+  color: #fff;
+  margin: 5px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.navBarBtn {
+  margin: 5px;
+  padding: 10px 25px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  cursor: pointer;
+}
+select {
+  border: none;
+}
+option {
+  margin: 3px 0;
+}
+.pizzasSection {
+  min-height: 55vh;
+}
+.pizzasSection h2 {
+  margin: 20px 0;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* =================== */
+.anyPizza {
+  pointer-events: none;
+  opacity: 0.5;
 }
